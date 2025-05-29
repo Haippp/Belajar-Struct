@@ -19,6 +19,16 @@ void inputData(string *nim,string *nama,string *alamat,float *ipk){
     cout << "\n\nTekan enter untuk melanjutkan..."; getch();
 }
 
+void outputData(mahasiswa kelas){
+    system("cls");
+    cout << "=== Berikut data yang telah anda input ===\n" << endl;
+    cout << "Nama \t: " << kelas.nama << endl;
+    cout << "Nim \t: " << kelas.nim << endl;
+    cout << "Alamat \t: " << kelas.alamat << endl;
+    cout << "Ipk \t: " << kelas.ipk << endl;
+    cout << "\n\nTekan enter untuk melanjutkan..."; getch();
+}
+
 int main(){
     mahasiswa ti2b;
     
@@ -28,4 +38,5 @@ int main(){
     float *ipk = &ti2b.ipk;
 
     inputData(nim, nm, almt, ipk);
+    outputData(ti2b);
 }
