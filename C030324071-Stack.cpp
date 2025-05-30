@@ -17,6 +17,15 @@ int Full(Stack *S){
     return (S->Count == MAXSATCK);
 }
 
-int Empyt(Stack *S){
+int Empty(Stack *S){
     return (S->Count == 0);
+}
+
+void Pop(Stack *S, stokItem *x){
+    if (Empty(S))
+        cout << "Stack masih kosong!" << endl;
+    else{
+        --(S->Count);
+        *x = S->Buku[S->Count];
+    }
 }
