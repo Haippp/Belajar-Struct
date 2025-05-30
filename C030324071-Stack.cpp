@@ -29,3 +29,12 @@ void Pop(Stack *S, stokItem *x){
         *x = S->Buku[S->Count];
     }
 }
+
+void Push(stokItem x, Stack *S){
+    if (Full(S))
+        cout << "Stack penuh! Data tidak dapat masuk!" << endl;
+    else{
+        S->Buku[S->Count] = x;
+        ++(S->Count);
+    }
+}
