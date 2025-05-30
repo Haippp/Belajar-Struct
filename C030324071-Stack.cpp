@@ -38,3 +38,15 @@ void Push(stokItem x, Stack *S){
         ++(S->Count);
     }
 }
+
+int main(){
+    Stack Perpus;
+    stokItem *B = Perpus.Buku;
+
+    initializeStack(&Perpus);
+
+    Pop(&Perpus, B);
+    Push(99, &Perpus);
+    
+    printf("%d", *B);
+}
