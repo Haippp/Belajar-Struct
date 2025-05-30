@@ -32,6 +32,13 @@ void outputData(mahasiswa kelas){
 int main(){
     mahasiswa ti2b;
     
+    ti2b.nama = "Hipni";
+    ti2b.nim = "C030324071";
+    ti2b.alamat = "Kuin Selatan";
+    ti2b.ipk = 3.7;
+    outputData(ti2b);
+
+
     string *nim = &ti2b.nim;
     string *nm = &ti2b.nama;
     string *almt = &ti2b.alamat;
