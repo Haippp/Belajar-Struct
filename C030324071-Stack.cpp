@@ -7,8 +7,12 @@ typedef int stokItem;
 typedef struct{
     stokItem Buku[MAXSATCK];
     int count;
-} stack;
+} Stack;
 
-void initializeStack(stack *S){
+void initializeStack(Stack *S){
     S->count = 0;
+}
+
+int Full(Stack *S){
+    return (S->count == MAXSATCK);
 }
