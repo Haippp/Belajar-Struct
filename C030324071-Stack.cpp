@@ -8,3 +8,7 @@ typedef struct{
     stokItem Buku[MAXSATCK];
     int count;
 } stack;
+
+void initializeStack(stack *S){
+    S->count = 0;
+}
