@@ -6,13 +6,17 @@ typedef int stokItem;
 
 typedef struct{
     stokItem Buku[MAXSATCK];
-    int count;
+    int Count;
 } Stack;
 
 void initializeStack(Stack *S){
-    S->count = 0;
+    S->Count = 0;
 }
 
 int Full(Stack *S){
-    return (S->count == MAXSATCK);
+    return (S->Count == MAXSATCK);
+}
+
+int Empyt(Stack *S){
+    return (S->Count == 0);
 }
